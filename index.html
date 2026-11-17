@@ -1,0 +1,621 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b0b0b">
+
+<meta name="description" content="دكتور وائل السعيد - فنان تشكيلي - DR. ART ACADEMY">
+
+<title>دكتور وائل السعيد | DR. ART ACADEMY</title>
+
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Arabic Font -->
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background:
+    radial-gradient(ellipse at 50% 5%, rgba(173,133,57,.20), transparent 48%),
+    linear-gradient(145deg,#151412,#080808 65%,#17130d);
+    color: white;
+    min-height: 100vh;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.gold {
+    color: #d9b76e;
+}
+
+.gold-gradient {
+    background: linear-gradient(135deg,#f4dfa7,#c49a4e,#8d682d);
+}
+
+.glass {
+    background: rgba(255,255,255,.045);
+    border: 1px solid rgba(217,183,110,.23);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+.card-shadow {
+    box-shadow: 0 25px 90px rgba(0,0,0,.7);
+}
+
+.social {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 17px;
+    color: #d9b76e;
+    background: rgba(255,255,255,.055);
+    border: 1px solid rgba(217,183,110,.2);
+    font-size: 21px;
+    transition: .3s ease;
+    text-decoration: none;
+}
+
+.social:hover {
+    background: #d9b76e;
+    color: #111;
+    transform: translateY(-4px);
+}
+
+.social:active {
+    transform: scale(.93);
+}
+
+.main-button {
+    background: linear-gradient(135deg,#f0dba7,#c59b50,#a67b34);
+    color: #17130c;
+    box-shadow: 0 8px 30px rgba(217,183,110,.2);
+    transition: .3s;
+}
+
+.main-button:hover {
+    transform: translateY(-3px);
+}
+
+.secondary-button {
+    background: rgba(255,255,255,.045);
+    border: 1px solid rgba(217,183,110,.22);
+    transition: .3s;
+    text-decoration: none;
+}
+
+.secondary-button:hover {
+    background: rgba(217,183,110,.12);
+}
+
+.avatar-ring {
+    background: linear-gradient(135deg,#f4dfa7,#99702e,#e2c47d);
+    padding: 3px;
+    border-radius: 50%;
+}
+
+.avatar-inner {
+    background: #211d17;
+    border-radius: 50%;
+}
+
+button, a {
+    touch-action: manipulation;
+}
+
+</style>
+
+</head>
+
+<body class="flex justify-center px-4 py-7">
+
+<main class="w-full max-w-md">
+
+    <!-- TOP BAR -->
+
+    <div class="flex justify-between items-center mb-5">
+
+        <div>
+            <p class="text-[10px] gold tracking-widest font-bold">
+                DIGITAL BUSINESS CARD
+            </p>
+
+            <p class="text-xs text-gray-500">
+                DR. ART ACADEMY
+            </p>
+        </div>
+
+        <!-- SHARE BUTTON -->
+
+        <button onclick="shareCard()"
+        class="glass rounded-full px-4 py-2 text-xs gold flex items-center gap-2">
+
+            <i class="fas fa-share-nodes"></i>
+            مشاركة الكارت
+
+        </button>
+
+    </div>
+
+
+    <!-- MAIN CARD -->
+
+    <section class="glass card-shadow rounded-[30px] p-6 sm:p-8">
+
+
+        <!-- PROFILE PHOTO -->
+
+        <div class="text-center">
+
+            <div class="avatar-ring w-32 h-32 mx-auto mb-5">
+
+                <div class="avatar-inner w-full h-full flex items-center justify-center overflow-hidden">
+
+                    <img
+                        id="profileImage"
+                        src="https://i.ibb.co/ds8v0V9y/Whats-App-Image-2026-07-10-at-11-33-22-PM-4.jpg"
+                        alt="دكتور وائل السعيد - DR. ART ACADEMY"
+                        class="w-full h-full object-cover"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <div class="gold text-[11px] tracking-[3px] mb-3 font-bold">
+                DR. ART ACADEMY
+            </div>
+
+
+            <h1 class="text-2xl sm:text-3xl font-black text-white mb-2">
+                دكتور/ وائل السعيد
+            </h1>
+
+
+            <p class="gold text-lg font-semibold">
+                فنان تشكيلي
+            </p>
+
+
+            <div class="w-16 h-[2px] gold-gradient mx-auto my-5 rounded-full"></div>
+
+        </div>
+
+
+
+        <!-- BIOGRAPHY -->
+
+        <div class="text-center mb-7">
+
+            <p class="text-gray-200 text-sm leading-8">
+
+                تعليم الرسم والفنون التشكيلية والبصرية،
+                وتحسين الخط وتنمية المهارات الإبداعية.
+
+            </p>
+
+
+            <div class="mt-4 space-y-3">
+
+                <p class="text-xs text-gray-400">
+
+                    <i class="fas fa-graduation-cap gold ml-2"></i>
+
+                    كورسات Architecture
+
+                </p>
+
+
+                <p class="text-xs text-gray-400">
+
+                    <i class="fas fa-palette gold ml-2"></i>
+
+                    كورسات Applied Art
+
+                </p>
+
+
+                <p class="text-xs text-gray-400">
+
+                    للجامعات الخاصة والدولية
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- SAVE CONTACT BUTTON -->
+
+        <button onclick="saveContact()"
+        class="main-button w-full rounded-2xl py-4 font-extrabold text-base flex items-center justify-center gap-3 mb-4">
+
+            <i class="fas fa-address-card text-xl"></i>
+
+            حفظ جهة الاتصال 📥
+
+        </button>
+
+
+
+        <!-- DIRECT PHONE -->
+
+        <a href="tel:+201009108485"
+        class="secondary-button block text-center rounded-2xl py-4 mb-3 text-white font-bold">
+
+            <i class="fas fa-phone gold ml-2"></i>
+
+            اتصال مباشر
+
+        </a>
+
+
+
+        <!-- WHATSAPP -->
+
+        <a href="https://wa.me/201009108485?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%AF%D9%83%D8%AA%D9%88%D8%B1%20%D9%88%D8%A7%D8%A6%D9%84"
+
+        target="_blank"
+        rel="noopener noreferrer"
+
+        class="block w-full text-center rounded-2xl py-4 mb-3 secondary-button text-green-400 font-bold">
+
+            <i class="fab fa-whatsapp text-xl ml-2"></i>
+
+            تواصل معي عبر واتساب
+
+        </a>
+
+
+
+        <!-- GOOGLE MAPS -->
+
+        <a href="https://www.google.com/maps/search/?api=1&query=DR+ART+ACADEMY+Egypt"
+
+        target="_blank"
+        rel="noopener noreferrer"
+
+        class="block text-center rounded-2xl py-4 mb-7 secondary-button gold font-bold">
+
+            <i class="fas fa-location-dot ml-2"></i>
+
+            الموقع على خرائط جوجل
+
+        </a>
+
+
+
+        <!-- SOCIAL MEDIA -->
+
+        <div class="text-center">
+
+            <h2 class="text-sm font-bold gold mb-5">
+
+                تابعني على مواقع التواصل الاجتماعي
+
+            </h2>
+
+
+            <div class="flex justify-center gap-3 flex-wrap">
+
+
+                <!-- FACEBOOK -->
+
+                <a class="social"
+
+                href="https://www.facebook.com/profile.php?id=100063698571745"
+
+                target="_blank"
+                rel="noopener noreferrer"
+
+                aria-label="Facebook"
+                title="Facebook">
+
+                    <i class="fab fa-facebook-f"></i>
+
+                </a>
+
+
+
+                <!-- INSTAGRAM -->
+
+                <a class="social"
+
+                href="https://www.instagram.com/dr.art.academy/"
+
+                target="_blank"
+                rel="noopener noreferrer"
+
+                aria-label="Instagram"
+                title="Instagram">
+
+                    <i class="fab fa-instagram"></i>
+
+                </a>
+
+
+
+                <!-- YOUTUBE -->
+
+                <a class="social"
+
+                href="https://www.youtube.com/@dr.artacademy2206"
+
+                target="_blank"
+                rel="noopener noreferrer"
+
+                aria-label="YouTube"
+                title="YouTube">
+
+                    <i class="fab fa-youtube"></i>
+
+                </a>
+
+
+
+                <!-- TIKTOK -->
+
+                <a class="social"
+
+                href="https://www.tiktok.com/@drwaelelsaeednamira"
+
+                target="_blank"
+                rel="noopener noreferrer"
+
+                aria-label="TikTok"
+                title="TikTok">
+
+                    <i class="fab fa-tiktok"></i>
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOTER -->
+
+        <div class="mt-9 pt-6 border-t border-white/10 text-center">
+
+            <h3 class="gold font-extrabold tracking-wider text-sm">
+
+                DR. ART ACADEMY
+
+            </h3>
+
+
+            <p class="text-gray-500 text-[11px] mt-2">
+
+                Art • Creativity • Education
+
+            </p>
+
+
+            <p class="text-gray-600 text-[10px] mt-4">
+
+                جميع الحقوق محفوظة © 2026
+
+            </p>
+
+        </div>
+
+
+    </section>
+
+</main>
+
+
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+
+// ======================================
+// CONTACT INFORMATION
+// ======================================
+
+const contact = {
+
+    firstName: "وائل",
+
+    lastName: "السعيد",
+
+    fullName: "دكتور/ وائل السعيد",
+
+    job: "فنان تشكيلي - DR. ART ACADEMY",
+
+    phone: "+201009108485",
+
+    email: "",
+
+    website: "https://www.youtube.com/@dr.artacademy2206"
+
+};
+
+
+
+// ======================================
+// VCARD ESCAPE
+// ======================================
+
+function escapeVCard(value) {
+
+    return String(value || "")
+        .replace(/\\/g, "\\\\")
+        .replace(/\r?\n/g, "\\n")
+        .replace(/,/g, "\\,")
+        .replace(/;/g, "\\;");
+
+}
+
+
+
+// ======================================
+// SAVE CONTACT - VCARD
+// ======================================
+
+function saveContact() {
+
+    const vcard = [
+
+        "BEGIN:VCARD",
+
+        "VERSION:3.0",
+
+        "N:" +
+        escapeVCard(contact.lastName) +
+        ";" +
+        escapeVCard(contact.firstName) +
+        ";;;",
+
+        "FN:" + escapeVCard(contact.fullName),
+
+        "ORG:DR. ART ACADEMY",
+
+        "TITLE:" + escapeVCard(contact.job),
+
+        "TEL;TYPE=CELL,VOICE:" +
+        escapeVCard(contact.phone),
+
+        ...(contact.email ? [
+            "EMAIL;TYPE=INTERNET:" +
+            escapeVCard(contact.email)
+        ] : []),
+
+        "URL:" + escapeVCard(contact.website),
+
+        "NOTE:" + escapeVCard(
+            "تعليم الرسم والفنون التشكيلية والبصرية وتحسين الخط وتنمية المهارات الإبداعية وكورسات Architecture و Applied Art للجامعات الخاصة والدولية"
+        ),
+
+        "END:VCARD"
+
+    ].join("\r\n") + "\r\n";
+
+
+    const blob = new Blob(
+
+        [vcard],
+
+        { type: "text/vcard;charset=utf-8" }
+
+    );
+
+
+    const url = URL.createObjectURL(blob);
+
+
+    const link = document.createElement("a");
+
+    link.href = url;
+
+    link.download = "Dr_Wael_ElSaeed.vcf";
+
+
+    document.body.appendChild(link);
+
+    link.click();
+
+    link.remove();
+
+
+    setTimeout(() => {
+
+        URL.revokeObjectURL(url);
+
+    }, 3000);
+
+}
+
+
+
+// ======================================
+// NATIVE MOBILE SHARE
+// ======================================
+
+async function shareCard() {
+
+    const shareData = {
+
+        title: "دكتور/ وائل السعيد",
+
+        text: "الكارت الشخصي الرقمي - DR. ART ACADEMY | فنان تشكيلي",
+
+        url: window.location.href
+
+    };
+
+
+    if (navigator.share) {
+
+        try {
+
+            await navigator.share(shareData);
+
+        }
+
+        catch (error) {
+
+            if (error.name !== "AbortError") {
+
+                console.error(error);
+
+            }
+
+        }
+
+    }
+
+    else {
+
+        try {
+
+            await navigator.clipboard.writeText(
+
+                window.location.href
+
+            );
+
+            alert("تم نسخ رابط الكارت بنجاح");
+
+        }
+
+        catch (error) {
+
+            prompt(
+                "انسخ رابط الكارت:",
+                window.location.href
+            );
+
+        }
+
+    }
+
+}
+
+
+</script>
+
+</body>
+</html>
